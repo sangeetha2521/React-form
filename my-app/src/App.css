@@ -1,0 +1,75 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.React-form {
+  display: flex;
+  height: 90vh;
+  background-color: #61dafb;
+  max-width: 50%;
+  border-radius: 10px;
+  box-shadow: 2px;
+  margin-left: 50vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  font-size: 1rem;
+}
+.Name {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Name,
+.Input {
+  display: flex;
+  font-size: 1rem;
+  margin-top: 1vh;
+  border-radius: 2px;
+  border: #282c34;
+  padding: 0.5rem 1rem;
+  box-shadow: 2px;
+}
+button {
+  font-size: 1rem;
+  margin-top: 1vh;
+  border-radius: 5px;
+  border: #282c34;
+  padding: 0.5rem 1rem;
+  box-shadow: 2px;
+  align-items: center;
+  cursor: pointer;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
