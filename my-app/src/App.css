@@ -13,16 +13,16 @@
   }
 }
 .React-form {
-  display: flex;
-  height: 90vh;
-  background-color: #61dafb;
-  max-width: 50%;
-  border-radius: 10px;
-  box-shadow: 2px;
-  margin-left: 50vh;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  font-size: 1rem;
+  position: absolute;
+  width: 350px;
+  height: 500px;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #ecf0f3;
+  margin-top: 20px;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  margin-left: 40%;
 }
 .Name {
   font-size: 2rem;
@@ -30,25 +30,44 @@
   flex-direction: column;
   justify-content: center;
 }
-.Name,
-.Input {
-  display: flex;
-  font-size: 1rem;
-  margin-top: 1vh;
-  border-radius: 2px;
-  border: #282c34;
-  padding: 0.5rem 1rem;
-  box-shadow: 2px;
+
+input {
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 20px;
+  height: 50px;
+  font-size: 15px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  text-align: start;
+  margin-top: 30px;
+}
+p{
+  font-size:13px;
+  color:red;
+  margin-top: 10px;
+  text-align: start;
 }
 button {
-  font-size: 1rem;
-  margin-top: 1vh;
-  border-radius: 5px;
-  border: #282c34;
-  padding: 0.5rem 1rem;
-  box-shadow: 2px;
-  align-items: center;
+  color: white;
+  margin-top: 20px;
+  background: #167ebe;
+  height: 40px;
+  border-radius: 10px;
   cursor: pointer;
+  font-weight: 900;
+  padding:10px;
+  padding-left: 20px;
+  transition: 0.5s;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
 }
 .App-header {
   background-color: #282c34;
