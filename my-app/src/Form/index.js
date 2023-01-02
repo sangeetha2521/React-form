@@ -7,23 +7,25 @@ export default function Index() {
     handleSubmit,
     formState: { errors },
     clearErrors,
+    reset,
   } = useForm();
   const [userInfo, setUserInfo] = React.useState();
   const onSubmit = (data) => {
     setUserInfo(data);
-    alert("Successfully submitted");
+    alert("Thanks for submiting the form");
+    reset();
   };
   return (
     <>
-      <p> {JSON.stringify(userInfo, undefined, 2)}</p>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="form-group">
           <div className="React-form">
-            <h2>React Hook Form Learning</h2>
+            <h2>React Hook Form</h2>
             <input
               name="username"
+              type="text"
               autoComplete="off"
-              placeholder="Enter username"
+              placeholder="Enter your username"
               {...register("username", {
                 required: "User name required",
               })}
@@ -32,16 +34,16 @@ export default function Index() {
             <input
               name="password"
               autoComplete="off"
-              placeholder="Enter password"
+              placeholder="Enter your password"
               {...register("password", {
-                required: "password required",
+                required: "Password required",
                 maxLength: { value: 6, message: "Maximum 6 charectors are allowed" },
               })}
             />
             <p>{errors.password && errors.password?.message}</p>
             <button>Submit</button>
             <button type="button" onClick={() => clearErrors()}>
-              Clear All Errors
+              Clear Errors
             </button>
           </div>
         </div>
